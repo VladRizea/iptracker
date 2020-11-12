@@ -22,7 +22,7 @@ export default {
 
 .wrapper-information{
     @include flexbox();
-
+    justify-self: center;
     @include lg{
         @include justify-content(flex-start);
         @include flex-direction(column); 
@@ -31,25 +31,22 @@ export default {
         padding: 35px 0 0 0;
         width: 12vw;
         height: 150px;
-        padding: 35px 0 0 0;
     }
-
     @include justify-content(center);
     @include flex-direction(column); 
     text-align: center;
     align-items: center;
-    width:  80vw;
+    align-self: center;
+    width:calc(70vw + 55px);
     height: 70px;
-    .title-style{
-
-       
+    padding: 0 0 0 0;
+    .title-style{       
         color: $cDarkGray;
         font-size: 12px;
         letter-spacing: 1px;
         font-weight: 700;
     }
     .info-style{
-
          @include lg{
             font-size: 1.6vw;
         }
@@ -57,7 +54,5 @@ export default {
         color: $cVeryDarkGray;
         font-size: 4vw;
     }
-
-
 }
 </style>
